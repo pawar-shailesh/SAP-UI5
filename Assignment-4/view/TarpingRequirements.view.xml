@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.TarpingRequirements"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>trap}">
+                <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+                        <Label/><Label/>
+						<Text text="Listed below are the customer requirements"  />
+                        <Label/><Label/>
+                        <Label/><Label/>
+                        <Text text="(traping instructions form customer master)" />
+						<Label/><Label/>
+                        <Label/><Label/>
+                        <Text text="All traping must be done outside wether permiting" />
+						<Label/><Label/>
+                        <Button type="Emphasized" text="Yes,I Understand" press="onPpe" />
+					    
+                        <Button type="Emphasized" text="Back" press="onBack" />
+                        <Label/><Label/>
+                        <!-- <VBox> -->
+                        <Label/><Label/>
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

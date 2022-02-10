@@ -1,0 +1,43 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc">
+	<Dialog
+		id="dialog"
+		title="if you have assitent then call the number listed below">
+        <content>
+        <VBox >
+        <f:SimpleForm layout="ResponsiveGridLayout">
+        <f:content>
+        <!-- <Text text="if you have assitent then call the number listed below"/> -->
+        <HBox >
+        <Text text="6am-2pm"/>
+        <Text text="808-202-453"/>
+        </HBox>
+        <Label></Label>
+        <HBox >
+        <Text text="2am-10pm"/>
+        <Text text="345-456-367"/>
+        </HBox>
+        <Label></Label>
+        <HBox >
+        <Text text="10am-6pm"/>
+        <Text text="324-756-865"/>
+        </HBox>
+        </f:content>
+        </f:SimpleForm>
+        </VBox>
+        </content>
+		<!-- <beginButton>
+			<Button
+				text="open"
+				press=".onOpenDialog"/>
+		</beginButton> -->
+        <endButton>
+        <Button
+				text="close"
+				press=".onBackDialog"/>
+        </endButton>
+	</Dialog>
+</core:FragmentDefinition>

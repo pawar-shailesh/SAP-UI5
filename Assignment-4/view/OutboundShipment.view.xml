@@ -1,0 +1,46 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.OutboundShipment"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>ship}">
+                 <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+						<Text text="{i18n>pick}"  />
+                        <Label/><Label/>
+                        <Text text="{i18n>num}" />
+						<!-- <Label/><Label/> -->
+                        <Label text="{i18n>id}" labelFor="shipmentId"/>
+                        <Input type="Number" id="shipmentId" width="30%" value="{model>/shipmentID}"/>
+						<Label/><Label/>
+                        <Button type="Emphasized" text="Continue" press="onContinue" />
+					    
+                        <Button type="Emphasized" text="{i18n>my}" press="onShipingId" />
+                        <Label/><Label/>
+                        <VBox alignItems="Center">
+                        <Button type="Emphasized" text="Back" press="onBack"/>
+                        <!-- <Label/><Label/> -->
+                        </VBox>
+                         <Label/><Label/>
+                        <VBox alignItems="Center">
+					    <Button type="Emphasized" text="Request Help" press="onDialogOpen"/>
+                        </VBox>
+                        <Label/><Label/>
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

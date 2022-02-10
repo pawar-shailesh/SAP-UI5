@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.Welcome"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>exl}">
+
+                    <VBox>
+                    <f:SimpleForm title="{i18n>pls}">
+						<f:content>
+                        <!-- <Label text="Welcome To EXLTUBE!" design="Bold" class="sapUiResponsiveMargin"/> -->
+						
+						<!-- <Label text="Please Start the Check in process by Selecting one of the Option Below." class="sapUiResponsiveMargin"/> -->
+						<Button type="Emphasized" text="{i18n>tube}" press="onPickingkUp" class="sapUiResponsiveMargin"/>
+					    <Button type="Emphasized" text="{i18n>drop}" press="onDroppingOff" class="sapUiResponsiveMargin"/>
+						
+                        </f:content>
+                        </f:SimpleForm >
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

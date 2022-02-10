@@ -1,0 +1,42 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.CellConfirmation"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>page}">
+                 <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+						<Text text="You Enterd : " />
+                        <Label/><Label/>
+                        <Text text="XXX-XXX-XXXX" />
+						<Label/><Label/>
+                        <Text text="is this Correct?"/>
+						<Label/><Label/>
+                        <Button type="Emphasized" text="Yes Continue" press="onContinue" />
+					    
+                        <Button type="Emphasized" text="No,goBack" press="onBack"/>
+                        <!-- <Button type="Emphasized" text="I don't have my shipment Id Number" press="onDroppingOff" /> -->
+                        <Label/><Label/>
+                        <!-- <VBox> -->
+                        <!-- <Button type="Emphasized" text="Back" press="onBack"/> -->
+                        <!-- <Label/><Label/> -->
+                        <!-- <VBox alignItems="Center">
+					    <Button type="Emphasized" text="Start Over" press="onDroppingOff" />
+                        </VBox>
+                        <Label/><Label/> -->
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

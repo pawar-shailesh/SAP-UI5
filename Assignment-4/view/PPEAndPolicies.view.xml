@@ -1,0 +1,44 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.PPEAndPolicies"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>ppe}">
+                 <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+						<Text text="The following personal protective equipment is required"  />
+                        <Label/><Label/>
+                        <Text text="-Hardat" />
+						<Label/><Label/>
+                        <Text text="-safety glasses" />
+                         <Label/><Label/> <Label/><Label/>
+                        <Text text="Please note the following policies"/>
+                         <Label/><Label/>
+                        <Text text="-Driver should stay in their trucks at all times other wise instructed" />
+                         <Label/><Label/>
+                        <Text text="-5 mph speed limit" />
+                         <Label/><Label/>
+                         <Text text="-must honk before entering bay" />
+						<Label/><Label/>
+                        <Button type="Emphasized" text="I Understand" press="onCheck" />
+					    
+                        <Button type="Emphasized" text="Back" press="onBack" />
+                        <Label/><Label/>
+                        <!-- <VBox> -->
+                        <Label/><Label/>
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

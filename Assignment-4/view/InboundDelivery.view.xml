@@ -1,0 +1,41 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.InboundDelivery"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>truck}">
+
+                   <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+						<Text text="Please enter your truck number here" />
+                        <Label/><Label/>
+                        <Input  type="Number" width="40%"></Input>
+						<!-- <Label/><Label/> -->
+						<Label/><Label/>
+                        <Button type="Emphasized" text="Continue" press="onCell" />
+                        <Button type="Emphasized" text="Back" press="onWelcome" />
+					    
+                        <!-- <Button type="Emphasized" text="I don't have my shipment Id Number" press="onDroppingOff" /> -->
+                        <Label/><Label/>
+                        <!-- <VBox> -->
+                        <!-- <Button type="Emphasized" text="Back" press="onBack"/> -->
+                        <!-- <Label/><Label/> -->
+                        <!-- <VBox alignItems="Center">
+					    <Button type="Emphasized" text="Main menu" press="onContinue" />
+                        </VBox> -->
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.Check"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                 <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+						<Text text="ThankYou for checking in at EXLTUBE" />
+                        <Label/><Label/>
+                        <Text text="Please return to your truck and wait until further instructed" />
+						<!-- <Label/><Label/> -->
+						<Label/><Label/>
+                        <Button type="Emphasized" text="Main menu" press="onContinue" />
+					    
+                        <!-- <Button type="Emphasized" text="I don't have my shipment Id Number" press="onDroppingOff" /> -->
+                        <Label/><Label/>
+                        <!-- <VBox> -->
+                        <!-- <Button type="Emphasized" text="Back" press="onBack"/> -->
+                        <!-- <Label/><Label/> -->
+                        <!-- <VBox alignItems="Center">
+					    <Button type="Emphasized" text="Main menu" press="onContinue" />
+                        </VBox> -->
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

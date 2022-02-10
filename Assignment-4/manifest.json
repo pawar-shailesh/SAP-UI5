@@ -1,0 +1,213 @@
+{
+  "_version": "1.32.0",
+  "sap.app": {
+    "id": "com.yash.assignment4",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.97.2",
+      "libs": {
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.yash.assignment4.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true,
+          "groupId": "$direct"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.yash.assignment4.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteWelcome",
+          "pattern": "RouteWelcome",
+          "target": [
+            "TargetWelcome"
+          ]
+        },
+        {
+            "name": "RouteOutboundShipment",
+            "pattern": "navToOutboundShipment",
+            "target": [
+              "TargetOutboundShipment"
+            ]
+          },
+          {
+            "name": "ShipmentConfirmationDetails",
+            "pattern": "RouteShipmentConfirmationDetails",
+            "target": [
+              "ShipmentConfirmationDetails"
+            ]
+          },
+          {
+            "name": "CellPhoneEntry",
+            "pattern": "RouteCellPhoneEntry",
+            "target": [
+              "CellPhoneEntry"
+            ]
+          },
+          {
+            "name": "CellConfirmation",
+            "pattern": "RouteCellConfirmation",
+            "target": [
+              "CellConfirmation"
+            ]
+          },
+          {
+            "name": "Traller",
+            "pattern": "RouteTraller",
+            "target": [
+              "Traller"
+            ]
+          },
+          {
+            "name": "TarpingRequirements",
+            "pattern": "RouteTarpingRequirements",
+            "target": [
+              "TarpingRequirements"
+            ]
+          },
+          {
+            "name": "PPEAndPolicies",
+            "pattern": "RoutePPEAndPolicies",
+            "target": [
+              "PPEAndPolicies"
+            ]
+          },
+          {
+            "name": "Check",
+            "pattern": "RouteCheck",
+            "target": [
+              "Check"
+            ]
+          },
+          {
+            "name": "InboundDelivery",
+            "pattern": "RouteInboundDelivery",
+            "target": [
+              "InboundDelivery"
+            ]
+          }
+
+      ],
+      "targets": {
+        "TargetWelcome": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Welcome"
+        },
+        "TargetOutboundShipment": {
+            "viewType": "XML",
+            "viewName": "OutboundShipment"
+          },
+          "ShipmentConfirmationDetails": {
+            "viewType": "XML",
+            "viewName": "ShipmentConfirmationDetails"
+          },
+          "CellPhoneEntry": {
+            "viewType": "XML",
+            "viewName": "CellPhoneEntry"
+          },
+          "CellConfirmation":{
+            "viewType": "XML",
+            "viewName": "CellConfirmation"
+          },
+          "Traller":{
+            "viewType": "XML",
+            "viewName": "Traller"
+          },
+          "TarpingRequirements":{
+            "viewType": "XML",
+            "viewName": "TarpingRequirements"
+          },
+          "PPEAndPolicies":{
+            "viewType": "XML",
+            "viewName": "PPEAndPolicies"
+          },
+          "Check":{
+            "viewType": "XML",
+            "viewName": "Check"
+          },
+          "InboundDelivery":{
+            "viewType": "XML",
+            "viewName": "InboundDelivery"
+          }
+      }
+    },
+    "rootView": {
+      "viewName": "com.yash.assignment4.view.Welcome",
+      "type": "XML",
+      "async": true,
+      "id": "Welcome"
+    }
+  }
+}

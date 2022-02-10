@@ -1,0 +1,52 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.ShipmentConfirmationDetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>detail}">
+                <VBox>
+                <f:SimpleForm layout="ResponsiveGridLayout">
+                        <f:content>
+						<Label text="Our records indicate that the following details for this shipment"/>
+						<Label></Label>
+                        <HBox>
+                        <Text text="Customer"/>
+                        <Label></Label>
+                        <Label></Label>
+                        <Text text=":Tom"/>
+                        </HBox>
+                        <Label></Label>
+                        <HBox>
+                        <Label></Label>
+                        <Text text="Carrier"/>
+                        <Text text=":Associate"/>
+                        </HBox>
+                        <Label></Label>
+                         <HBox>
+                        <Text text="Destination"/>
+                        <Text text=":Indore,MP"/>
+                         </HBox>
+                         <Label></Label>
+                         <Label></Label>
+                        <HBox>
+						<Button type="Emphasized" text="Yes Continue" press="onContinue" class="sapUiResponsiveMargin"/>
+					    <Button type="Emphasized" text="No,Go Back" press="onBack" class="sapUiResponsiveMargin"/>
+						</HBox>
+                        <Label></Label>
+                        <VBox>
+                        <Button type="Emphasized" text="Start Over" press="onWelcome" class="sapUiResponsiveMargin"/>
+                        </VBox>
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

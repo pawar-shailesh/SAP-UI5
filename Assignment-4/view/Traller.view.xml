@@ -1,0 +1,55 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.Traller"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>you}">
+                <VBox>
+                    <f:SimpleForm layout="ResponsiveGridLayout">
+						<f:content>
+                        <Label></Label>
+                        <Label></Label>
+                        <!-- <HBox> -->
+                        <Button type="Emphasized" text="48'" press="onTraping" class="sapUiResponsiveMargin" />
+                        <Button type="Emphasized" text="Side kits" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <!-- </HBox> -->
+                        <Label></Label>
+                        <Label></Label>
+                        <!-- <HBox> -->
+                        <Button type="Emphasized" text="53'" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <Button type="Emphasized" text="Spread Axel" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <!-- </HBox> -->
+                        <Label></Label>
+                        <Label></Label>
+                        <!-- <HBox> -->
+                        <Button type="Emphasized" text="californiya spread" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <Button type="Emphasized" text="step Deck" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <!-- </HBox> -->
+                        <Label></Label>
+                        <Label></Label>
+                        <!-- <HBox> -->
+                        <Button type="Emphasized" text="Constoga" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <Button type="Emphasized" text="Others" press="onTraping" class="sapUiResponsiveMargin"/>
+                        <!-- </HBox> -->
+                        <!-- <Label text="Welcome To EXLTUBE!" design="Bold" class="sapUiResponsiveMargin"/> -->
+						
+						<!-- <Label text="Please Start the Check in process by Selecting one of the Option Below." class="sapUiResponsiveMargin"/> -->
+						<Label></Label>
+                        <VBox alignItems="Center">
+						<Button type="Emphasized" text="Back" press="onBack" class="sapUiResponsiveMargin"/>
+					    <Button type="Emphasized" text="Start Over" press="onWelcome" class="sapUiResponsiveMargin"/>
+						</VBox>
+                        </f:content>
+                        </f:SimpleForm >
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

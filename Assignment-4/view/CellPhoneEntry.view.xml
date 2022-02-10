@@ -1,0 +1,52 @@
+<mvc:View
+    controllerName="com.yash.assignment4.controller.CellPhoneEntry"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>phone}">
+                <VBox>
+                 <f:SimpleForm layout="ResponsiveGridLayout" columnsL="1">
+                        <f:content>
+                        <Label/><Label/>
+						<Text text="Please Enter the cell Phone Number in the event in EXLTUBE employee needs to call you"  />
+                        <Label  text="Cell Phone" class="sapUiResponsiveMargin"/><Label/>
+                        <!-- <Text text="Cell Phone" /> -->
+						<!-- <Label/><Label/> -->
+                        <!-- <Input type="Number"/>
+                        <Input type="Number"/>
+                        <Input type="Number"/> -->
+
+                        <HBox>
+						<Label text="Cell Phone" class="sapUiResponsiveMargin" tooltip="Numeric only"/>
+						<MaskInput  mask="999" class="sapUiResponsiveMargin" placeholderSymbol="_" />
+						<MaskInput  mask="999" class="sapUiResponsiveMargin" placeholderSymbol="_"/>
+						<MaskInput  mask="999" class="sapUiResponsiveMargin" placeholderSymbol="_"/>
+					   </HBox>
+
+						<Label/><Label/>
+                        <Button type="Emphasized" text="Continue" press="onContinue" />
+					    
+                        <Button type="Emphasized" text="Back" press="onBack"/>
+                        <!-- <Button type="Emphasized" text="I don't have my shipment Id Number" press="onDroppingOff" /> -->
+                        <Label/><Label/>
+                        <!-- <VBox> -->
+                        <!-- <Button type="Emphasized" text="Back" press="onBack"/> -->
+                        <Label/><Label/>
+                        <VBox alignItems="Center">
+					    <Button type="Emphasized" text="Start Over" press="onWelcome" />
+                        </VBox>
+                        <Label/><Label/>
+                        </f:content>
+                        </f:SimpleForm>
+					</VBox>
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
